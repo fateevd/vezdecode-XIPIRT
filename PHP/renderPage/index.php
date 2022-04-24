@@ -1,3 +1,10 @@
+<?php
+$info = null;
+
+
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,7 +23,13 @@
         <td>Дата завершения</td>
         <td>Время</td>
     </tr>
-
+    <?php
+    foreach ($info as $item) {
+        ?>
+        <tr><?php $item ?></tr>
+        <?php
+    }
+    ?>
 </table>
 </body>
 </html>

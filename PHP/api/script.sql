@@ -10,4 +10,11 @@ create table Tasks
     Due_date    date     not null,
     Estimate HOUR not null,
     Description char(max) not null
+);
+
+create table User
+(
+    Id          INTEGER primary key unique AUTO_INCREMENT,
+    name char(30),
+    Password char(30)
 )
